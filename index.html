@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!--Custom Font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+     <a id=leaderboard href="#">View Highscores<i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a>
+        <span id="score">Time:</span> 
+        </nav>
+       </header>
+    <main>
+      <section id="hero">
+        <h2 id="start_heading">Coding Quiz Challenge</h2>
+        <div id="quiz_options"></div>
+        <div id="answer_div"><span id="answer"></span></div>
+        
+            <div id="all_done">
+                <p>Your Final Score is <span id="final_score"></span></p>
+                <form id="player_name"><label for="initials">Enter Initials: </label> <input id="initials"/> <button type="submit" id="submit_btn">Submit</button></form>
+            </div>
+
+            <div id="highscore">
+                <!-- <p><span id="serial_no"></span>. <span id="player_initials"></span> - <span id="player_score"></span></p> -->
+            </div>
+            <div id="highscore_btns">
+                <button id="reset">
+                    Go Back
+                </button>
+                <button id="clear_highscore">
+                    Clear Highscores
+                </button>
+            </div>
+
+            <div id="start_desc">
+                <p>Try to answer the following code-related quetions within the time limit.</p>
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            </div>
+            <button id="start_quiz">Start Quiz</button>
+        </section>  
+    </main>
+    <!-- custom js -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
